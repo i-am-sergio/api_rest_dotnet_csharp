@@ -17,5 +17,13 @@ namespace rest_dotnet_csharp.controllers
             return lista;
         }
 
+        [HttpPost]
+        public async Task<ActionResult> Post([FromBody] ProductModel newProduct)
+        {
+            var productData = new ProductData();
+            await productData.InsertarProducto(newProduct);
+            return new CreatedAtActionResult("Get", "Product", null, null); // Devuelve 201 Created
+        }
+
     }
 }
