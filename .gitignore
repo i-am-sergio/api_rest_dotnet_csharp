@@ -1,0 +1,16 @@
+# Carpeta de binarios generados
+/bin/
+/obj/
+
+# Carpeta de dependencias de NuGet
+/packages/
+
+# Carpeta de archivos temporales
+/.vscode/
+/.vs/
+/backup*/
+
+# Archivos generados por Visual Studio
+*.suo
+*.user
+*.sln.docstates
